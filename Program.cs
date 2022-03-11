@@ -6,21 +6,22 @@ namespace csharp_outube_crash_course
     {
         static void Main(string[] args)
         {
-            //Console.Write("Hey!");
-            //Console.WriteLine("Hello World!");
-            //Console.WriteLine("I love candies!");
-            //Console.WriteLine("I am a Christian!!");
-            //Console.WriteLine("And I am not afraid of the Gospel!");
-            //Console.Write("I am a gamer");
-            //Console.Beep();
+            Console.Write("Hey!");
+            Console.WriteLine("Hello World!");
+            Console.WriteLine("I love candies!");
+            Console.WriteLine("I am a Christian!!");
+            Console.WriteLine("And I am not afraid of the Gospel!");
+            Console.Write("I am a gamer");
+            Console.Beep();     //for a beep after compiling
 
-            //Console.WriteLine("Hey!");
-            //Console.WriteLine("\t You ");
-            //Console.WriteLine(" \t\tare");
-            //Console.WriteLine(" \t\t\ta");
-            //Console.WriteLine(" \t\t\t\twitch");
+            //the use of escape characters.
+            Console.WriteLine("Hey!");
+            Console.WriteLine("\t You ");
+            Console.WriteLine(" \t\tare");
+            Console.WriteLine(" \t\t\ta");
+            Console.WriteLine(" \t\t\t\twitch");
 
-
+            //data types
             int age = 21;
             double height = 299.2;
             bool alive = true;
@@ -33,6 +34,9 @@ namespace csharp_outube_crash_course
             Console.WriteLine("You are alive!" + alive);
             Console.WriteLine("Your symbol is " + symbol);
             Console.WriteLine("Your username is " + symbol + name);
+
+            //const
+
 
         }
     }
