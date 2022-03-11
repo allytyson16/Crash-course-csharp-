@@ -36,6 +36,8 @@ namespace csharp_outube_crash_course
             Console.WriteLine("Your username is " + symbol + name);
 
             //const
+            const double PI = 3.142;
+            Console.WriteLine(PI);
 
 
         }
