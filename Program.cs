@@ -93,6 +93,28 @@ namespace csharp_outube_crash_course
 
 
             //arithmetic operators
+            int friends = 8;
+            friends = friends + 4; //increment by 4
+            friends += 4; //increment by 4
+            friends++; //for increment by 1
+            Console.WriteLine("You have " + friends + " number of friends by increment of 9");
+
+            friends = friends - 2;  //decrement by 3, from current value of friends-17
+            friends -= 2;   //decrement by 3
+            friends--;  //decrement by 1
+            Console.WriteLine("You have " + friends + " number of friends by decrement 5");
+
+
+            friends = friends * 2; //from current value of friends-12
+            friends *= 2; //multiplying by 2
+            Console.WriteLine("You have " + friends + " number of friends by multiplying by 2");
+
+            friends = friends / 2; //from current value of friends we divide by 2
+            friends /= 2;  //dividing by 2
+            Console.WriteLine("You have " + friends + " number of friends by dividing by 4 ");
+
+            int remainder = friends % 5; //the remainder of the current number of friends - 144
+            Console.WriteLine("You have " + remainder + " number of friends remaining after using the modulo of 5 ");
 
         }
     }
