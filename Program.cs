@@ -145,7 +145,21 @@ namespace csharp_outube_crash_course
             //generating random numbers
             Random random = new Random();
             int randomNum = random.Next(1, 7); //die is thrown with the expectation of getting 2 outcomes.
-            Console.WriteLine(randomNum);
+            Console.WriteLine("The random number when a die is tossed is " +randomNum); //possible outcomes are {1,2,3,4,5,6}
+            //for adjustments
+            int randomNum1 = random.Next(1, 7) + 50;
+            Console.WriteLine("The random number when a die is tossed and added to 50 is " + randomNum1 ); //possible outcomes are {51,52,53,54,55,56}
+            //double random numbers
+            double randomDouble = random.NextDouble(); //random numbers are between 0 and 1
+            double randomDouble1 = random.NextDouble();
+            double randomDouble2 = random.NextDouble();
+            double randomDouble3 = random.NextDouble();
+            Console.WriteLine("The random double is " + randomDouble);
+            Console.WriteLine("The first random double is " + randomDouble1);
+            Console.WriteLine("The second random double is " + randomDouble2);
+            Console.WriteLine("The third random double is " + randomDouble3);
+
+
         }
     }
 }
