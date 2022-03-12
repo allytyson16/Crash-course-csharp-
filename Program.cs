@@ -116,6 +116,36 @@ namespace csharp_outube_crash_course
             int remainder = friends % 5; //the remainder of the current number of friends - 144
             Console.WriteLine("You have " + remainder + " number of friends remaining after using the modulo of 5 ");
 
+
+            //math class
+            double num = 4;
+            double exp = Math.Pow(num, 2); //use of exponent
+            Console.WriteLine("{0} raised to the power 2 is {1}", num, exp);
+
+            double squareR = Math.Sqrt(num); //use of square root
+            Console.WriteLine("{0} sqaured is {1}", num, squareR);
+
+            double abs = Math.Abs(num); //use of absolute value
+            Console.WriteLine("The absolute value of {0} is {1}", num, abs);
+
+            double num1 = 3.142;
+            double round = Math.Round(num1); //rounding
+            Console.WriteLine("The rounded value of {0} is {1}", num, round);
+            double roundUp = Math.Ceiling(num1); //rounding up
+            Console.WriteLine("The rounded up value of {0} is {1}", num, roundUp);
+            double roundDown = Math.Floor(num1); //rounding down
+            Console.WriteLine("The rounded down value of {0} is {1}", num, roundDown);
+
+            double maximum = Math.Max(num1, num); //using max
+            Console.WriteLine("The maximum value between {0} and {1} is {2}", num1, num, maximum);
+            double minimum = Math.Min(num1, num); //using min
+            Console.WriteLine("The minimum value between {0} and {1} is {2}", num1, num, minimum);
+
+
+            //generating random numbers
+            Random random = new Random();
+            int randomNum = random.Next(1, 7); //die is thrown with the expectation of getting 2 outcomes.
+            Console.WriteLine(randomNum);
         }
     }
 }
