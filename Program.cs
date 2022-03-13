@@ -176,7 +176,7 @@ namespace csharp_outube_crash_course
             //using string methods
             string fullName = "Ally Tyson 16";
             fullName = fullName.ToLower(); //conversion to lower case
-            Console.WriteLine("Your full name in upper case is " + fullName);
+            Console.WriteLine("Your full name in lower case is " + fullName);
             fullName = fullName.ToUpper();//conversion to upper case
             Console.WriteLine("Your full name in upper case is " + fullName);
            
@@ -195,6 +195,36 @@ namespace csharp_outube_crash_course
             Console.WriteLine("Your first name is " + firstName);
             string lastName = fullName.Substring(5, 8);
             Console.WriteLine("Your last name is " + lastName);
+
+
+            //if statements
+            Console.WriteLine("Enter your age : ");
+            int age3 = int.Parse(Console.ReadLine());
+
+            if(age3 >= 18)
+            {
+                Console.WriteLine("You are eligible to vote.");
+            }
+            else if (age < 0)
+            {
+                Console.WriteLine("You haven't been born yet");
+            }
+            else
+            {
+                Console.WriteLine("Sorry, you must be 18 and above to vote.");
+            }
+
+            Console.WriteLine("Enter your name : ");
+            string name2 = (Console.ReadLine());
+
+            if (name == "")
+            {
+                Console.WriteLine("You did not enter anything!!!");
+            }
+            else
+            {
+                Console.WriteLine("Hello {0}, Welcome to my humble code.", name2);
+            }
         }
     }
 }
