@@ -200,7 +200,6 @@ namespace csharp_outube_crash_course
             //if statements
             Console.WriteLine("Enter your age : ");
             int age3 = int.Parse(Console.ReadLine());
-
             if(age3 >= 18)
             {
                 Console.WriteLine("You are eligible to vote.");
@@ -215,8 +214,7 @@ namespace csharp_outube_crash_course
             }
 
             Console.WriteLine("Enter your name : ");
-            string name2 = (Console.ReadLine());
-
+            string name2 = Console.ReadLine();
             if (name == "")
             {
                 Console.WriteLine("You did not enter anything!!!");
@@ -225,6 +223,88 @@ namespace csharp_outube_crash_course
             {
                 Console.WriteLine("Hello {0}, Welcome to my humble code.", name2);
             }
+
+
+
+            //switches --- efficient way for many if else statements
+            Console.WriteLine("What day is your birthday? : ");
+            string day = Console.ReadLine();
+
+            if(day == "Monday")
+            {
+                Console.WriteLine("It is Monday.");
+            }
+            else if (day == "Tuesday")
+            {
+                Console.WriteLine("It is Tuesday.");
+            }
+            else if (day == "Wednesday")
+            {
+                Console.WriteLine("It is Wednesday.");
+            }
+            else if (day == "Thursday")
+            {
+                Console.WriteLine("It is Thursday.");
+            }
+            else if (day == "Friday")
+            {
+                Console.WriteLine("It is Friday.");
+            }
+            else if (day == "Saturday")
+            {
+                Console.WriteLine("It is Saturday.");
+            }
+            else if (day == "Sunday")
+            {
+                Console.WriteLine("It is Sunday.");
+            }
+            else
+            {
+                Console.WriteLine(day + " is not a day.");
+            }
+            Console.WriteLine("What day is your birthday? : ");
+            string day1 = Console.ReadLine();
+            //to switch
+            switch (day)
+            {
+                case "Monday":
+                    Console.WriteLine("It is Monday.");
+                    break;
+
+                case "Tuesday":
+                    Console.WriteLine("It is Tuesday.");
+                    break;
+
+                case "Wednesday":
+                    Console.WriteLine("It is Wednesday.");
+                    break;
+
+                case "Thursday":
+                    Console.WriteLine("It is Thursday.");
+                    break;
+
+                case "Friday":
+                    Console.WriteLine("It is Friday.");
+                    break;
+
+                case "Saturday":
+                    Console.WriteLine("It is Saturday.");
+                    break;
+
+                case "Sunday":
+                    Console.WriteLine("It is Sunday.");
+                    break;
+
+                default:
+                    Console.WriteLine(day + " is not a day.");
+                    break;
+
+
+
+            }
+
+
+
         }
     }
 }
