@@ -332,8 +332,17 @@ namespace csharp_outube_crash_course
 
 
             //for loops
-            Console.WriteLine("My name is Isifu");
-
+            //increment
+            for(int i = 0; i < 10; i++)
+            {
+                Console.WriteLine(i);
+            }
+            //decrement
+            for(int i = 10; i > 0; i--)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine("HAPPY NEW YEAR!!!!!!!");
 
         }
     }
