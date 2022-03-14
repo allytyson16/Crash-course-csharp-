@@ -312,7 +312,7 @@ namespace csharp_outube_crash_course
             }
             else if (temp <= -50 || temp >= 50)
             {
-                Console.WriteLine("DO NOT GO OUTSIDE!");
+                Console.WriteLine("DO NOT GO OUTSIDE!, IT IS RISKY.");
             }
             else
             {
@@ -321,7 +321,6 @@ namespace csharp_outube_crash_course
 
 
             //while loop
-
             string name3 = "" ;
 
             while (name3 == "")
@@ -330,6 +329,10 @@ namespace csharp_outube_crash_course
                 name3 = Console.ReadLine();
             }
             Console.WriteLine("Hello, " + name3);
+
+
+            //for loops
+            Console.WriteLine("My name is Isifu");
 
 
         }
