@@ -179,11 +179,11 @@ namespace csharp_outube_crash_course
             Console.WriteLine("Your full name in lower case is " + fullName);
             fullName = fullName.ToUpper();//conversion to upper case
             Console.WriteLine("Your full name in upper case is " + fullName);
-           
+
 
             //replacing / with - using string methods
             string phoneNumber = "27/502/5158";
-            phoneNumber = phoneNumber.Replace("/", "-"); 
+            phoneNumber = phoneNumber.Replace("/", "-");
             Console.WriteLine(phoneNumber);
 
             //inserting 
@@ -200,7 +200,7 @@ namespace csharp_outube_crash_course
             //if statements
             Console.WriteLine("Enter your age : ");
             int age3 = int.Parse(Console.ReadLine());
-            if(age3 >= 18)
+            if (age3 >= 18)
             {
                 Console.WriteLine("You are eligible to vote.");
             }
@@ -230,7 +230,7 @@ namespace csharp_outube_crash_course
             Console.WriteLine("What day is your birthday? : ");
             string day = Console.ReadLine();
 
-            if(day == "Monday")
+            if (day == "Monday")
             {
                 Console.WriteLine("It is Monday.");
             }
@@ -298,11 +298,26 @@ namespace csharp_outube_crash_course
                 default:
                     Console.WriteLine(day + " is not a day.");
                     break;
-
-
-
             }
 
+
+            //logical operators
+            //&& and || operators
+            Console.WriteLine("Enter temperature of outside: ");
+            double temp = double.Parse(Console.ReadLine());
+
+            if(temp >= 10 && temp <= 25)
+            {
+                Console.WriteLine("It is warm outside!");
+            }
+            else if(temp <= -50 || temp >= 50)
+            {
+                Console.WriteLine("DO NOT GO OUTSIDE!");
+            }
+            else
+            {
+                Console.WriteLine("Arhn eii.");
+            }
 
 
         }
